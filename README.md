@@ -70,9 +70,9 @@ Bora deixar nossa documentaçao mais visual? <br>
 
 9. Feito isso, acessaremos a nossa rota  <br>
 
-`localhost:8080/minha-rota-de-documentacao` <br>
+`localhost:3000/minha-rota-de-documentacao` <br>
 
-PS: Estou usando a porta 8080, caso vc esteja usando alguma diferente, use ela, beleza? <br> <br>
+PS: Estou usando a porta 3000, caso vc esteja usando alguma diferente, use ela, beleza? <br> <br>
 
 
 ### * Deploy & Heroku <br>
