@@ -74,7 +74,20 @@ Bora deixar nossa documentaçao mais visual? <br>
 
 `localhost:8080/minha-rota-de-documentacao` <br>
 
-PS: Estou usando a porta 8080, caso vc esteja usando alguma diferente, use ela, beleza? <br>
+PS: Estou usando a porta 8080, caso vc esteja usando alguma diferente, use ela, beleza? <br> <br>
 
+
+### * Deploy & Heroku <br>
+Bora deployar? <br> <br>
+![vamo faze oq](https://media.giphy.com/media/TidHfACqQif3q/giphy.gif) <br>
+1. Iremos conectar nosso repositório com o heroku, para isso precisaremos criar uma conta no (heroku)[https://www.heroku.com],
+e criar o primeiro app clicando no botão _"new"_.
+
+2. Coloque o nome do seu projeto e escolha a região em que o seu projeto ficará, pode escolher os EUA ou Europa, não faz diferença nesse caso. <br>
+![imagem](https://raw.githubusercontent.com/analuizasampaio/on12-s18-deploy-projeto-final/main/imagens_tutorial/Untitled%202.png)
+
+3. Na area de deploy conecte-se à sua conta no Github como método de deployment.
+
+4. Em seguida, encontre o github do projeto que você deseja dar deploy, e entao escolha qual branch deseja dar deploy.
 
 
