@@ -24,11 +24,9 @@ Segue esse passo a passo q eh sucesso:
 
 3. Executo os seguintes comandos:
 ```
-const swaggerAutogen = require('swagger-autogen')();
-const outputFile = './swagger/swagger_output.json';
-const endpointsFiles = ['./src/app.js'];
-
-swaggerAutogen(outputFile, endpointsFiles);
+     $ npm i swagger-autogen swagger-ui-express (isso fará a instalacao do swagger autogen no nosso projeto)
+     $ touch swagger.js (isso fará com que um arquivo swagger seja criado no nosso projeto)
+     $ mkdir swagger/  (isso fará com que uma pasta swagger seja criada no nosso projeto)
 ```
 
 4. Depois da criação da pasta, vamos no arquivo swagger.js e adicionamos esse pedaço de código: <br>
@@ -42,7 +40,7 @@ swaggerAutogen(outputFile, endpointsFiles);
 5. Iremos lá no nosso package.json e faremos a seguinte alteraçao:
 ```
   "script”: {
-   "start": "nodemon index.js",
+   "start": "nodemon server.js",
    "swagger-autogen": "node swagger.js",
  }
  ```

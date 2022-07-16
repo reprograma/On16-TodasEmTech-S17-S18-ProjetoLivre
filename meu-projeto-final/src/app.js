@@ -9,12 +9,19 @@ const candidatas = require("./routes/candidatasRouter")
 const empresas = require("./routes/empresaRouter")
 const vagas = require("./routes/vagasRouter")
 
+
+const swaggerUi = require('swagger-ui-express');
+const swaggerFile = require('../swagger/swagger_output.json');
+
+
 require('dotenv-safe').config()
 
 const dataBase = require("./model/database");
 dataBase.connect()
 
 const app = express()
+
+app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerFile));
 
 app.use(morgan('dev'))
 app.use(helmet())
