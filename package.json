@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js",
-    "swagger-autogen": "node swagger.js"
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
