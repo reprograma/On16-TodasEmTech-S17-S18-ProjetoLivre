@@ -73,12 +73,6 @@ const registerNewEmpresa = (req, res) => {
   //// TODAS AS CANDIDATAS 
 
   const allCandidatas = (req, res) => {
-    const token = auth(req, res);
-    jwt.verify(token, SECRET, (err) => {
-      if (err) {
-        return res.status(403).send("Token inválido");
-      }
-    });
     candidatasModel.find((err, candidata) => {
       if (err) {
         return res.status(424).send({ message: err.message });
