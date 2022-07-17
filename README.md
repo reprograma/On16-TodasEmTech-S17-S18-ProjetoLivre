@@ -78,21 +78,9 @@ PS: Estou usando a porta 3000, caso vc esteja usando alguma diferente, use ela, 
 
 ### * Deploy & Heroku <br>
 Bora deployar? <br> <br>
-![vamo faze oq](https://media.giphy.com/media/TidHfACqQif3q/giphy.gif) <br>
-1. Iremos conectar nosso repositório com o heroku, para isso precisaremos criar uma conta no (heroku)[https://www.heroku.com],
-e criar o primeiro app clicando no botão _"new"_.
 
-2. Coloque o nome do seu projeto e escolha a região em que o seu projeto ficará, pode escolher os EUA ou Europa, não faz diferença nesse caso. <br>
-![imagem](https://raw.githubusercontent.com/analuizasampaio/on12-s18-deploy-projeto-final/main/imagens_tutorial/Untitled%202.png)
 
-3. Na area de deploy conecte-se à sua conta no Github como método de deployment.
-
-4. Em seguida, encontre o github do projeto que você deseja dar deploy, e entao escolha qual branch deseja dar deploy.
-![imagem](https://raw.githubusercontent.com/reprograma/On16-TodasEmTech-S17-S18-ProjetoLivre/main/material/reponame.png)
-
-#### Agora bora la no projeto de novoooo, ta bom?! 
-
-Após criar sua conta no Heroku e conectar seu repositório com o Heroku, algumas mudanças devem ser feitas no seu projeto. <br>
+#### Antes de tudo, precisamos realizar algumas mudanças no seu projeto <br>
 
 Primeiramente, precisamos criar um arquivo chamado _Procfile_. 
 
@@ -110,31 +98,49 @@ Dentro desse arquivo vamos digitar:
  
  ![img](https://raw.githubusercontent.com/reprograma/On16-TodasEmTech-S17-S18-ProjetoLivre/main/material/procfileinside.png) <br>
 
-#### Conectando o Cluster com o projeto no Heroku
+Beleza, May! E agora? <br>
 
-Feito isso, voltaremos para o app do Heroku e iremos na aba de Settings. 
-Nós vamos adicionar as variáveis de ambiente necessárias para o projeto. 
-Em Settings vamos para a área de Config Vars <br>
-
-Vamos criar as variáveis de ambiente do projeto, em Config Vars clicamos em Reveal Config Vars. 
-Teremos então o campo de KEY (chave) e o campo de VALUE (valor), nele colocaremos a chave e o valor criado por nós no arquivo de configuração do banco de dados do seu projeto a MONGODB_URI <br>
-![alt](https://raw.githubusercontent.com/reprograma/On16-TodasEmTech-S17-S18-ProjetoLivre/main/material/configvar.png) <br>
-Depois de adicionar o nome da variável e o valor clicamos em add
-Se você tem outras variáveis de ambiente no seu .env, como o SECRET, PORT ou qualquer outra que seu projeto dependa pra funcionar você também deve fazer esse processo de adicionar nas config vars as chaves e os valores correspondentes.
-
-Fez todos os passos? Seu código ta sem erro?
+Fez todos os passos anteriores? Seu código ta sem erro?
 Vamo deployar pra ver se ta tudo ok? 
 
 Primeiro, você vai precisar subir as alterações feitas no seu projeto:
-
+```
           git add .
          (pra adicionar os arquivos alterados)
           git commit -m 'meu commit'
          (pra commitar os arquivos alterados)
           git push origin minha-branch
          (pra subir pro repositorio os arquivos alterados)
+```
+ 
+![vamo faze oq](https://media.giphy.com/media/TidHfACqQif3q/giphy.gif) <br>
+Feito isso, vamos conhecer nosso amigo Heroku! <br>
 
-Depois disso, voltaremos no app do Heroku e acessaremos a aba de Deploy. Seguiremos para Manual Deploy(fica la no final da pagina), selecionaremos a branch e entao clicaremos em Deploy Branch <br>
+1. Iremos conectar nosso repositório com o heroku, para isso precisaremos criar uma conta no (heroku)[https://www.heroku.com],
+e criar o primeiro app clicando no botão _"new"_.
+
+2. Coloque o nome do seu projeto e escolha a região em que o seu projeto ficará, pode escolher os EUA ou Europa, não faz diferença nesse caso. <br>
+![imagem](https://raw.githubusercontent.com/analuizasampaio/on12-s18-deploy-projeto-final/main/imagens_tutorial/Untitled%202.png)
+
+3. Na area de deploy conecte-se à sua conta no Github como método de deployment.
+
+4. Em seguida, encontre o github do projeto que você deseja dar deploy, e entao escolha qual branch deseja dar deploy.
+![imagem](https://raw.githubusercontent.com/reprograma/On16-TodasEmTech-S17-S18-ProjetoLivre/main/material/reponame.png)
+
+
+#### Conectando o Cluster com o projeto no Heroku
+
+Agora, lá na aba Settings, vamos adicionar as variáveis de ambiente necessárias para o projeto. <br>
+Em Settings vamos para a área de Config Vars <br>
+
+Vamos criar as variáveis de ambiente do projeto, em Config Vars clicamos em Reveal Config Vars. 
+Teremos então o campo de KEY (chave) e o campo de VALUE (valor), nele colocaremos a chave e o valor criado por nós no arquivo de configuração do banco de dados do seu projeto a MONGODB_URI <br>
+![alt](https://raw.githubusercontent.com/reprograma/On16-TodasEmTech-S17-S18-ProjetoLivre/main/material/configvar.png) <br>
+Depois de adicionar o nome da variável e o valor clicamos em add
+Se você tem outras variáveis de ambiente no seu .env, como o SECRET, PORT ou qualquer outra que seu projeto dependa pra funcionar você também deve fazer esse processo de adicionar nas config vars as chaves e os valores correspondentes. <br>
+
+
+Depois disso, voltaremos acessaremos a aba de Deploy novamente. Seguiremos para Manual Deploy(fica la no final da pagina), selecionaremos a branch e entao clicaremos em Deploy Branch <br>
 ![alt](https://raw.githubusercontent.com/analuizasampaio/on12-s18-deploy-projeto-final/main/imagens_tutorial/Untitled%207.png) <br>
 
 Em seguida, um terminalzinho aparecerá para você. <br>
