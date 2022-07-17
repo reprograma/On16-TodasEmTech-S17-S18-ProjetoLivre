@@ -57,7 +57,8 @@ Bora deixar nossa documentaçao mais visual? <br>
 
 7. Vamos lá no nosso app.js e adicionaremos o seguinte código: <br>
 
-``` const swaggerUi = require('swagger-ui-express');
+``` 
+    const swaggerUi = require('swagger-ui-express');
 
     const swaggerFile = require('../swagger/swagger_output.json');
 
