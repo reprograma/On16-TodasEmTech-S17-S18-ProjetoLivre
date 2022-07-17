@@ -141,5 +141,16 @@ Em seguida, um terminalzinho aparecerá para você. <br>
 ![alt](https://github.com/analuizasampaio/on12-s18-deploy-projeto-final/raw/main/imagens_tutorial/Untitled%208.png) <br>
 Mas logo ele vai ficar todo verdinho <br> ![alt](https://github.com/analuizasampaio/on12-s18-deploy-projeto-final/raw/main/imagens_tutorial/Untitled%209.png) <br> e você pode clicar em View, para abrir sua linda api. <br>
 
+### Dicas da May
+1. Ative o deploy automático para que toda vez que vc der push nessa branch as modificações automaticamente sejam atualizadas
+
+2. Lembre-se de conferir se na aba de 'Settings' tem 'Node.js' no seu buildpack. <br>
+Ih, May! Checkei e não tem, o que faço? Você vai clicar em 'add buildpack' e selecionar um dos buildbacks oficiais ou a URL, no caso do Node.js é só selecionar o ícone dele e salvar em 'Save changes'.
+
+3. Confiram se as variáveis de ambiente estão configuradas certinhas. (As que voce colocar no Heroku devem estar iguais a que está no seu arquivo .env)
+
+4. Confira se você está usando a palavra PORT pra identificar a porta, o Heroku so reconhece se for PORT, evite usar DB_PORT, DATA_BASE_PORT, CONFIG_PORT ou algo do tipo. <br>
+
+May, fiz todo o passo a passo mas ainda tá dando erro: vem no [SAC da May](https://wa.me/+5581992584285)! Vamos resolver essa bronca :purple_heart:
 
 Deu certo? Parabéns! Nossa rota está no ar! 🎊
