@@ -67,18 +67,18 @@ Bora deixar nossa documentaçao mais visual? <br>
 
 8. Em seguida, inicializaremos nosso projeto, é so digitar no terminal: <br>
 
-`npm start`
+```$ npm start```
 
 9. Feito isso, acessaremos a nossa rota  <br>
 
-`localhost:3000/minha-rota-de-documentacao` <br>
+```localhost:3000/minha-rota-de-documentacao``` <br>
 
 PS: Estou usando a porta 3000, caso vc esteja usando alguma diferente, use ela, beleza? <br> <br>
 
 
-### * Deploy & 
-<br>
-Bora deployar? <br> <br>
+### * Deploy & Heroku
+
+Bora deployar? <br>
 
 
 #### Antes de tudo, precisamos realizar algumas mudanças no seu projeto <br>
