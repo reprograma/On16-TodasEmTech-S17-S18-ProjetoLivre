@@ -76,7 +76,8 @@ Bora deixar nossa documentaçao mais visual? <br>
 PS: Estou usando a porta 3000, caso vc esteja usando alguma diferente, use ela, beleza? <br> <br>
 
 
-### * Deploy & Heroku <br>
+### * Deploy & 
+<br>
 Bora deployar? <br> <br>
 
 
@@ -113,10 +114,12 @@ Primeiro, você vai precisar subir as alterações feitas no seu projeto:
          (pra subir pro repositorio os arquivos alterados)
 ```
  
-![vamo faze oq](https://media.giphy.com/media/TidHfACqQif3q/giphy.gif) <br>
 Feito isso, vamos conhecer nosso amigo Heroku! <br>
 
-1. Iremos conectar nosso repositório com o heroku, para isso precisaremos criar uma conta no (heroku)[https://www.heroku.com],
+![vamo faze oq](https://media.giphy.com/media/TidHfACqQif3q/giphy.gif) <br>
+
+
+1. Iremos conectar nosso repositório com o heroku, para isso precisaremos criar uma conta no [heroku](https://www.heroku.com),
 e criar o primeiro app clicando no botão _"new"_.
 
 2. Coloque o nome do seu projeto e escolha a região em que o seu projeto ficará, pode escolher os EUA ou Europa, não faz diferença nesse caso. <br>
