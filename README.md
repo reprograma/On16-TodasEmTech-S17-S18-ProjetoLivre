@@ -162,4 +162,50 @@ Ih, May! Checkei e não tem, o que faço? Você vai clicar em 'add buildpack' e 
 
 May, fiz todo o passo a passo mas ainda tá dando erro: vem no [SAC da May](https://wa.me/+5581992584285)! Vamos resolver essa bronca :purple_heart:
 
-Deu certo? Parabéns! Nossa rota está no ar! 🎊
+Deu certo? Parabéns! Nossa rota está no ar! 🎊 <br>
+
+A arquitetura do projeto final, vai ficar parecida com essa aqui que a [Gaia](https://github.com/Gaia-Maria) criou pra gente: <br>
+
+```
+ARQUITETURA MVC - EXEMPLO (adapte para o seu projeto)
+
+  📁 PROJETOFINAL (essa é a pasta raiz) 
+  | 
+  |-  📁 node_modules ( dentro da pasta raiz)
+  |
+  |-  📁 Swagger (dentro da pasta raiz)
+  |         |- 📄 Swagger.json 
+  |
+  |-  📁 src (dentro da pasta raiz)
+  |    |
+  |    |- 📁 database  (dentro src)
+  |         |- 📄 mongooseConnect.js  
+  |
+  |    |- 📁 controllers  (dentro src)
+  |         |- 📄 xController.js  
+  |         |- 📄 yController.js  
+  |  
+  |    |- 📁 models (dentro src)
+  |         |- 📄 xModel.js  
+  |         |- 📄 yModel.js  
+  |  
+  |    |- 📁 routes  (dentro src)
+  |         |- 📄 xRoutes.js   
+  |         |- 📄 yRoutes.js 
+  |
+  |    |- 📁 test (dentro src)
+  |         |- 📄 x.test.js
+  |
+  |    |- 📄 app.js (dentro src)
+  |
+  |- 📄 Procfile (pasta raiz - esse é o heroku gatinhas)
+  |- 📄 Swagger.js (pasta raiz)
+  |- 📄 .eslintrc (pasta raiz) - surge depois de *Escolhas do ESlint* (instalação acima))
+  |- 📄 .env (pasta raiz
+  |- 📄 .env.example (pasta raiz)
+  |- 📄 .gitignore  (pasta raiz)
+  |- 📄 package-lock.json  (pasta raiz)
+  |- 📄 pakage.json (pasta raiz)
+  |- 📄 README.md  (pasta raiz)
+  |- 📄 server.js  (pasta raiz)
+```
